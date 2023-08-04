@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#chooseTheAnswer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1.7em;
+}
+
+ul{
+    margin: 3vw 0;
+}
+
+ul li{
+    width: 90%;
+    margin: auto;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+ul li:hover{
+    background-color: rgb(138, 138, 11);
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vw;
+    width: 30%;
+}
+
+.buttons button{
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+}
