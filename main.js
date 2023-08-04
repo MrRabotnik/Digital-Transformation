@@ -2,7 +2,6 @@ let nav1 = document.getElementById("navAbout");
 let nav2 = document.getElementById("navDigitalTransform");
 let nav3 = document.getElementById("navOnlineInclusion");
 let nav4 = document.getElementById("navBestPractices");
-let nav5 = document.getElementById("65465");
 let firstSlide = document.getElementById("slideWhyDoWe");
 let secondSlide = document.getElementById("slideInclusionOnline");
 let thirdSlide = document.getElementById("slideDigitalTransform");
@@ -11,6 +10,7 @@ let fifthSlide = document.getElementById("slideSurprise");
 let closeMobileMenu = document.getElementById("closeMobileMenu");
 let header = document.getElementById("header");
 let hamburgerMenu = document.getElementById("hamburgerMenu");
+let goBack = document.getElementById("goBack")
 
 nav1.addEventListener("click", () => {
     goToSlide(firstSlide)
@@ -23,9 +23,6 @@ nav3.addEventListener("click", () => {
 })
 nav4.addEventListener("click", () => {
     goToSlide(fourthSlide)
-})
-nav5.addEventListener("click", () => {
-    goToSlide(fifthSlide)
 })
 
 hamburgerMenu.addEventListener("click", openMobileMenufn)

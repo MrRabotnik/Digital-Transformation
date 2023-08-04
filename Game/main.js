@@ -4,6 +4,12 @@ let ans3 = document.getElementById("ans3")
 let ans4 = document.getElementById("ans4")
 let ans5 = document.getElementById("ans5")
 
+let questionNumberContainer = document.getElementById("questionNumber")
+
+let popUp = document.getElementById("popUp")
+let closePopUp = document.getElementById("closePopUp")
+let scoreContainer = document.getElementById("scoreContainer")
+
 let previous = document.getElementById("previous")
 let next = document.getElementById("next")
 
@@ -74,13 +80,15 @@ let questions = [
         "question": "Question 6",
         "answers": [
             "Answer 1", "Answer 2", "Answer 3", "Answer 4"
-        ]
+        ],
+        "correct": 3
     },
     {
         "question": "Question 7",
         "answers": [
             "Answer 1", "Answer 2", "Answer 3", "Answer 4"
-        ]
+        ],
+        "correct": 3
     },
     {
         "question": "What do you think is the best solution in the online inclustion of youth peopel?</br> 1)Organizing regional youth forums</br> 2) Engaging youth people through youth employment opportunities </br> 3) Forming a coalition of talented young leaders active in the digital space </br> 4) There is no right answer",
@@ -93,13 +101,15 @@ let questions = [
         "question": "Question 9",
         "answers": [
             "Answer 1", "Answer 2", "Answer 3", "Answer 4"
-        ]
+        ],
+        "correct": 3
     },
     {
         "question": "Question 10",
         "answers": [
             "Answer 1", "Answer 2", "Answer 3", "Answer 4"
-        ]
+        ],
+        "correct": 3
     },
 ]
 
@@ -113,9 +123,9 @@ function changeQuestion() {
     let answer4 = questions[questionNumber].answers[3]
     let answer5 = questions[questionNumber].answers[4]
 
-    if(questions[questionNumber].choose === "wrong"){
+    if (questions[questionNumber].choose === "wrong") {
         chooseWrong.innerHTML = "Choose the wrong answer!!!"
-    }else{
+    } else {
         chooseWrong.innerHTML = "Choose the correct answer!!!"
     }
 
@@ -173,6 +183,7 @@ function selectAnswer(num) {
 function previousQuestion() {
     if (questionNumber !== 0) {
         questionNumber--
+        questionNumberContainer.innerHTML = `${questionNumber + 1}/${questions.length}`
         changeQuestion()
     }
     ans1.style.backgroundColor = "transparent"
@@ -182,12 +193,14 @@ function previousQuestion() {
     ans5.style.backgroundColor = "transparent"
 }
 
-function nextQuestion() {
+function nextQuestion() {   
     if (questionNumber !== questions.length - 1) {
         questionNumber++
+        questionNumberContainer.innerHTML = `${questionNumber + 1}/${questions.length}`
         changeQuestion()
     } else {
-        alert(`Your Score is ${score}/10`)
+        popUp.style.visibility = "visible"
+        scoreContainer.innerHTML = `Your Score is ${score}/10`
     }
     ans1.style.backgroundColor = "transparent"
     ans2.style.backgroundColor = "transparent"
@@ -195,8 +208,9 @@ function nextQuestion() {
     ans4.style.backgroundColor = "transparent"
     ans5.style.backgroundColor = "transparent"
 }
-function onHover(e) {
-    console.log(e)
+
+function closePopUpfn(){
+    popUp.style.visibility = "hidden"
 }
 
 changeQuestion()
@@ -206,10 +220,8 @@ ans2.addEventListener("click", () => { selectAnswer(2) })
 ans3.addEventListener("click", () => { selectAnswer(3) })
 ans4.addEventListener("click", () => { selectAnswer(4) })
 ans5.addEventListener("click", () => { selectAnswer(5) })
-ans1.addEventListener("mouseover", (e) => { onHover(e) })
-ans2.addEventListener("mouseover", (e) => { onHover(e) })
-ans3.addEventListener("mouseover", (e) => { onHover(e) })
-ans4.addEventListener("mouseover", (e) => { onHover(e) })
-ans5.addEventListener("mouseover", (e) => { onHover(e) })
+
+closePopUp.addEventListener("click", closePopUpfn)
+
 previous.addEventListener("click", previousQuestion)
 next.addEventListener("click", nextQuestion)

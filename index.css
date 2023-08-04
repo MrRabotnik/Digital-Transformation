@@ -22,7 +22,7 @@ header {
     visibility: visible;
 }
 
-.mobileMenu{
+.mobileMenu {
     visibility: hidden;
     height: 5vw;
     display: flex;
@@ -32,12 +32,12 @@ header {
     cursor: pointer;
 }
 
-#closeMobileMenu{
+#closeMobileMenu {
     visibility: hidden;
     position: absolute;
 }
 
-header > img {
+header>img {
     height: 90%;
 }
 
@@ -56,6 +56,22 @@ header>div>nav:hover {
     cursor: pointer;
     color: #020613;
     text-shadow: 0 0 10px blue;
+}
+
+#navInovationGame{
+    background-color: #0e2c8e;
+}
+
+#navInovationGame a{
+    color: white;
+}
+
+#navInovationGame:hover{
+    background-color: white;
+}
+
+#navInovationGame:hover a{
+    color: #0e2c8e;
 }
 
 .firstSlide {
@@ -159,7 +175,7 @@ h6 {
         justify-content: start;
     }
 
-    header #closeMobileMenu{
+    header #closeMobileMenu {
         width: 100%;
         height: auto;
         text-align: right;
@@ -169,7 +185,7 @@ h6 {
         cursor: pointer;
     }
 
-    header #closeMobileMenu:hover{
+    header #closeMobileMenu:hover {
         color: red;
     }
 
@@ -177,55 +193,56 @@ h6 {
         width: 90%;
         height: auto;
     }
-    
-    header > div {
+
+    header>div {
         width: 90%;
         flex-direction: column;
         height: 60%;
     }
-    
+
     header>div>nav {
         margin: 0 1vw;
         box-sizing: border-box;
         padding: 1.5vw;
         font-size: 3vw;
     }
-    
+
     header>div>nav:hover {
         border-bottom: 1px solid #0e2c8e;
         cursor: pointer;
     }
 
-    .mobileMenu{
+    .mobileMenu {
         visibility: visible;
     }
 
-    .mobileMenu > img{
+    .mobileMenu>img {
         height: 90%;
     }
 
-    .slideContainer{
+    .slideContainer {
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 
     .slideImageContainer {
         margin: 5vw;
         width: 70%;
     }
-    
+
     .slideImageContainer>div {
         width: 80%;
     }
 
-    .slideImageContainer > div > img {
+    .slideImageContainer>div>img {
         width: 100%;
     }
-    
+
     .articleContainer {
         width: 90%;
     }
-    
+
     .articleContainer>article {
         width: 100%;
         font-size: 2.5vw;
