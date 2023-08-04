@@ -19,9 +19,25 @@ header {
     font-weight: 500;
     position: fixed;
     z-index: 10;
+    visibility: visible;
 }
 
-header>img {
+.mobileMenu{
+    visibility: hidden;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    position: fixed;
+    cursor: pointer;
+}
+
+#closeMobileMenu{
+    visibility: hidden;
+    position: absolute;
+}
+
+header > img {
     height: 90%;
 }
 
@@ -38,6 +54,8 @@ header>div>nav {
 header>div>nav:hover {
     border-bottom: 1px solid #0e2c8e;
     cursor: pointer;
+    color: #020613;
+    text-shadow: 0 0 10px blue;
 }
 
 .firstSlide {
@@ -48,7 +66,6 @@ header>div>nav:hover {
 
 .secondSlide {
     background-color: #eee;
-    padding-top: 1vw;
 }
 
 .thirdSlide {
@@ -66,11 +83,14 @@ header>div>nav:hover {
 .mainSlides {
     margin: 0;
     height: 50vw;
+    box-sizing: border-box;
 }
 
 .mainSlides h1 {
     margin: 0;
+    padding: 2vw 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .mainSlides p {
@@ -130,8 +150,57 @@ h6 {
 }
 
 @media only screen and (max-width: 900px) {
+    header {
+        width: 50%;
+        height: 100%;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    header #closeMobileMenu{
+        width: 100%;
+        height: auto;
+        text-align: right;
+        padding: 1vw;
+        box-sizing: border-box;
+        font-size: 5vw;
+        cursor: pointer;
+    }
+
+    header #closeMobileMenu:hover{
+        color: red;
+    }
+
+    header>img {
+        width: 90%;
+        height: auto;
+    }
+    
+    header > div {
+        width: 90%;
+        flex-direction: column;
+        height: 60%;
+    }
+    
     header>div>nav {
-        font-size: 1.7vw;
+        margin: 0 1vw;
+        box-sizing: border-box;
+        padding: 1.5vw;
+        font-size: 3vw;
+    }
+    
+    header>div>nav:hover {
+        border-bottom: 1px solid #0e2c8e;
+        cursor: pointer;
+    }
+
+    .mobileMenu{
+        visibility: visible;
+    }
+
+    .mobileMenu > img{
+        height: 90%;
     }
 
     .slideContainer{
@@ -164,9 +233,5 @@ h6 {
     .mainSlides {
         height: auto;
         padding: 5vw 0;
-    }
-
-    .firstSlide {
-        padding-top: 7vw;
     }
 }
