@@ -41,6 +41,11 @@ header>img {
     height: 90%;
 }
 
+#erasmusLogo {
+    width: 10%;
+    height: auto;
+}
+
 header>div {
     display: flex;
 }
@@ -49,6 +54,7 @@ header>div>nav {
     margin: 0 1vw;
     box-sizing: border-box;
     padding: 0.3vw;
+    font-size: 1vw;
 }
 
 header>div>nav:hover {
@@ -58,23 +64,23 @@ header>div>nav:hover {
     text-shadow: 0 0 10px blue;
 }
 
-#navInovationGame{
+#navInovationGame {
     background-color: #0e2c8e;
 }
 
-#navInovationGame a{
+#navInovationGame a {
     color: white;
 }
 
-#navInovationGame:hover{
+#navInovationGame:hover {
     background-color: white;
 }
 
-#navInovationGame:hover a{
+#navInovationGame:hover a {
     color: #0e2c8e;
 }
 
-.zeroSlide{
+.zeroSlide {
     background-image: url("./images/banner.png");
     background-repeat: no-repeat;
     background-position: 0 6vw;
@@ -85,15 +91,14 @@ header>div>nav:hover {
 
 .firstSlide {
     background-color: #efe2ba;
-    height: 50vw;
 }
 
 .secondSlide {
-    background-color: rgb(245, 245, 245);
+    background-color: #efe2ba;
 }
 
 .thirdSlide {
-    background-color: #efe2ba;
+    background-color: rgb(245, 245, 245);
 }
 
 .fourthSlide {
@@ -102,6 +107,41 @@ header>div>nav:hover {
 
 .fifthSlide {
     background-color: #efe2ba;
+}
+
+.sixthSlide {
+    background-color: #efe2ba;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto !important;
+}
+
+.sixthSlide>div {
+    width: 40%;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgb(48, 25, 148);
+    margin: 5vw 0;
+}
+
+.sixthSlide>div img {
+    width: 100%;
+}
+
+.sixthSlide .thematicPosterDescription {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    height: 3vw;
+    background-color: white;
+    text-shadow: 0 0 5px #0e2c8e;
+}
+
+.seventhSlide {
+    background-color: rgb(245, 245, 245);
 }
 
 .mainSlides {
@@ -167,10 +207,22 @@ header>div>nav:hover {
     font-size: 14px;
 }
 
-.articleContainer > div {
+.articleContainer>div {
     width: 95%;
     margin-top: 2vw;
     text-shadow: 0 0 3px blue;
+}
+
+.articleDescription {
+    border: 3px dotted black;
+    padding: 2vw;
+    box-sizing: border-box;
+    background-image: url("./images/reflectionBanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 1.3vw;
 }
 
 .articleContainer>article p,
@@ -181,24 +233,31 @@ h6 {
     color: black;
 }
 
-.quizzletContainer{
+.quizzletContainer {
     height: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     color: green;
-    background-color: white;
+    box-sizing: border-box;
+    background-image: url("./images/reflectionBanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 1.3vw;
 }
 
-.quizzletContainer a{
+.quizzletContainer a {
     text-decoration: none;
-}
-
-.quizzletContainer a:hover{
     color: red;
 }
 
-@media only screen and (max-width: 900px) {
+.quizzletContainer a:hover {
+    color: green;
+}
+
+@media only screen and (max-width: 1040px) {
     header {
         width: 50%;
         height: 100%;
@@ -236,7 +295,7 @@ h6 {
         margin: 0 1vw;
         box-sizing: border-box;
         padding: 1.5vw;
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     header>div>nav:hover {
@@ -252,7 +311,7 @@ h6 {
         height: 90%;
     }
 
-    #banner{
+    #banner {
         height: 42vw;
         padding: 0;
         background-position: 0 0;
@@ -286,7 +345,7 @@ h6 {
         font-size: 2.5vw;
     }
 
-    .articleContainer > div {
+    .articleContainer>div {
         width: 100%;
         margin-top: 2vw;
         text-shadow: 0 0 3px blue;
@@ -297,5 +356,21 @@ h6 {
     .mainSlides {
         height: auto;
         padding: 5vw 0;
+    }
+
+    #navMain{
+        width: 60%;
+    }
+
+    #foundationLogo {
+        width: 30%;
+    }
+
+    #erasmusLogo {
+        width: 50%;
+    }
+
+    .quizzletContainer{
+        padding: 2vw;
     }
 }

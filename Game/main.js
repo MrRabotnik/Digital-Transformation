@@ -35,7 +35,7 @@ let questions = [
 
     },
     {
-        "question": "Can you mention NGO's classification? </br> 1) Orientation </br> 2) Level of operation </br> 3) Disorentation </br> 4) Conflict of public interest </br>  ",
+        "question": "Can you mention NGO's classification? </br><p style='font-size: 2.3vw'>1) Orientation </br> 2) Level of operation </br> 3) Disorentation </br> 4) Conflict of public interest </br></p>  ",
         "answers": [
             "1, 3",
             "2, 4",
@@ -88,7 +88,7 @@ let questions = [
         "choose": "wrong"
     },
     {
-        "question": "Match the country with its app</br> 1) Pol &nbsp;&nbsp;&nbsp; a) They work on adding social and digital platforms</br> 2) Tur &nbsp;&nbsp;&nbsp; b) Create new cultures and customs with local food </br>3) Azer &nbsp;&nbsp;&nbsp;c) Youth has oppurtunities to apply for events in minutes</br> 4) Uk &nbsp;&nbsp;&nbsp;d) helps to search for special events, universities, jobs",
+        "question": "Match the country with its app</br><p style='font-size: 2.3vw'> 1) Pol &nbsp;&nbsp;&nbsp; a) They work on adding social and digital platforms</br> 2) Tur &nbsp;&nbsp;&nbsp; b) Create new cultures and customs with local food </br>3) Azer &nbsp;&nbsp;&nbsp;c) Youth has oppurtunities to apply for events in minutes</br> 4) Uk &nbsp;&nbsp;&nbsp;d) helps to search for special events, universities, jobs</p>",
         "answers": [
             "1-a, 2-d, 3-b, 4-c",
             "1-c, 2-b, 3-a, 4-d",
@@ -98,7 +98,7 @@ let questions = [
         "correct": 3
     },
     {
-        "question": "What do you think is the best solution in the online inclustion of youth peopel?</br> 1)Organizing regional youth forums</br> 2) Engaging youth people through youth employment opportunities </br> 3) Forming a coalition of talented young leaders active in the digital space </br> 4) There is no right answer",
+        "question": "What do you think is the best solution in the online inclustion of youth peopel?</br><p style='font-size: 2.3vw'> 1)Organizing regional youth forums</br> 2) Engaging youth people through youth employment opportunities </br> 3) Forming a coalition of talented young leaders active in the digital space </br> 4) There is no right answer</p>",
         "answers": [
             "3, 1", "1, 2, 3", "1, 4", "2, 4"
         ],
@@ -116,7 +116,7 @@ let questions = [
         "choose": "wrong"
     },
     {
-        "question": "Match </br> 1) Video conferencing &nbsp;&nbsp;&nbsp; a) Microsoft Teams</br> 2) Collaboration software &nbsp;&nbsp;&nbsp; b) Zoom, Skype </br> 3) Instant messaging &nbsp;&nbsp;&nbsp; c) Google docs </br> 4) Shared spreadsheets &nbsp;&nbsp;&nbsp; d) Telegram",
+        "question": "Match the apps with their description </br><p style='font-size: 2.3vw'> 1) Video conferencing &nbsp;&nbsp;&nbsp; a) Microsoft Teams</br> 2) Collaboration software &nbsp;&nbsp;&nbsp; b) Zoom, Skype </br> 3) Instant messaging &nbsp;&nbsp;&nbsp; c) Google docs </br> 4) Shared spreadsheets &nbsp;&nbsp;&nbsp; d) Telegram</p>",
         "answers": [
             "1-b, 2-d, 3-a, 4-c",
             "1-b, 2-a, 3-d, 4-c",

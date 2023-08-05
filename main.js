@@ -1,11 +1,16 @@
+let main = document.getElementById("navMain");
 let nav1 = document.getElementById("navAbout");
 let nav2 = document.getElementById("navDigitalTransform");
 let nav3 = document.getElementById("navOnlineInclusion");
-let nav4 = document.getElementById("navBestPractices");
+let nav4 = document.getElementById("navDigitalPlatform");
+let nav5 = document.getElementById("navDigitalManagement");
+let nav6 = document.getElementById("navBestPractices");
 let firstSlide = document.getElementById("slideWhyDoWe");
-let secondSlide = document.getElementById("slideInclusionOnline");
-let thirdSlide = document.getElementById("slideDigitalTransform");
+let banner = document.getElementById("banner");
+let secondSlide = document.getElementById("slideDigitalTransform");
+let thirdSlide = document.getElementById("slideInclusionOnline");
 let fourthSlide = document.getElementById("slideDigitalPlatforms");
+let digitalManagement = document.getElementById("digitalManagement");
 let fifthSlide = document.getElementById("slideSurprise");
 let closeMobileMenu = document.getElementById("closeMobileMenu");
 let header = document.getElementById("header");
@@ -24,6 +29,20 @@ nav3.addEventListener("click", () => {
 nav4.addEventListener("click", () => {
     goToSlide(fourthSlide)
 })
+
+nav5.addEventListener("click", () => {
+    goToSlide(digitalManagement)
+})
+
+nav6.addEventListener("click", () => {
+    goToSlide(fifthSlide)
+})
+
+main.addEventListener("click", () => {
+    goToSlide(banner)
+})
+
+
 
 hamburgerMenu.addEventListener("click", openMobileMenufn)
 
@@ -50,7 +69,7 @@ function closeMobileMenufn() {
 window.addEventListener("resize", resizeScreen);
 
 function resizeScreen(){
-    if(window.innerWidth > 900){
+    if(window.innerWidth > 1040){
         header.style.visibility = "visible"
     }else{
         header.style.visibility = "hidden"
