@@ -77,16 +77,23 @@ let questions = [
         "correct": 1
     },
     {
-        "question": "Question 6",
+        "question": "What is not included in the digitization of society?",
         "answers": [
-            "Answer 1", "Answer 2", "Answer 3", "Answer 4"
+            "To understand how digitalisation is shaping the societies, including its impact on youth work and on young people",
+            "To be able to take young people's digital cultures into account in youth work practices",
+            "To be able to encourage young people to shape the process of digitalisation themselves",
+            "To know how young people communicate in digital environments and to adjust digital youth work activities to that"
         ],
-        "correct": 3
+        "correct": 4,
+        "choose": "wrong"
     },
     {
-        "question": "Question 7",
+        "question": "Match the country with its app</br> 1) Pol &nbsp;&nbsp;&nbsp; a) They work on adding social and digital platforms</br> 2) Tur &nbsp;&nbsp;&nbsp; b) Create new cultures and customs with local food </br>3) Azer &nbsp;&nbsp;&nbsp;c) Youth has oppurtunities to apply for events in minutes</br> 4) Uk &nbsp;&nbsp;&nbsp;d) helps to search for special events, universities, jobs",
         "answers": [
-            "Answer 1", "Answer 2", "Answer 3", "Answer 4"
+            "1-a, 2-d, 3-b, 4-c",
+            "1-c, 2-b, 3-a, 4-d",
+            "1-d, 2-a, 3-c, 4-b",
+            "1-b, 2-c, 3-d, 4-a"
         ],
         "correct": 3
     },
@@ -98,18 +105,25 @@ let questions = [
         "correct": 2
     },
     {
-        "question": "Question 9",
+        "question": "Here are some facts",
         "answers": [
-            "Answer 1", "Answer 2", "Answer 3", "Answer 4"
+            "Working remotely and communicating through various virtual platforms facilitated to create diverse and flexible environment",
+            "Digital transformation increased effieciency of project delivery by accelerating its timeline, managing tasks productively",
+            "Digital transformation increased effieciency of project implementation, but it has also increased costs",
+            "With the help of the new technologies it became easier to manage tasks and track the progress, as well as collaborate and communicate with stakeholders"
         ],
-        "correct": 3
+        "correct": 3,
+        "choose": "wrong"
     },
     {
-        "question": "Question 10",
+        "question": "Match </br> 1) Video conferencing &nbsp;&nbsp;&nbsp; a) Microsoft Teams</br> 2) Collaboration software &nbsp;&nbsp;&nbsp; b) Zoom, Skype </br> 3) Instant messaging &nbsp;&nbsp;&nbsp; c) Google docs </br> 4) Shared spreadsheets &nbsp;&nbsp;&nbsp; d) Telegram",
         "answers": [
-            "Answer 1", "Answer 2", "Answer 3", "Answer 4"
+            "1-b, 2-d, 3-a, 4-c",
+            "1-b, 2-a, 3-d, 4-c",
+            "1-a, 2-b, 3-c, 4-d",
+            "1-b, 2-c, 3-d, 4-a"
         ],
-        "correct": 3
+        "correct": 2
     },
 ]
 
@@ -193,7 +207,7 @@ function previousQuestion() {
     ans5.style.backgroundColor = "transparent"
 }
 
-function nextQuestion() {   
+function nextQuestion() {
     if (questionNumber !== questions.length - 1) {
         questionNumber++
         questionNumberContainer.innerHTML = `${questionNumber + 1}/${questions.length}`
@@ -209,7 +223,7 @@ function nextQuestion() {
     ans5.style.backgroundColor = "transparent"
 }
 
-function closePopUpfn(){
+function closePopUpfn() {
     popUp.style.visibility = "hidden"
 }
 
