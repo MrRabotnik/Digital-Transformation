@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    font-family: 'Borel', cursive;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Borel", cursive;
+    font-family: "Roboto", sans-serif;
     background-color: #efe2ba;
     height: 100vh;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 header {
@@ -37,7 +37,7 @@ header {
     position: absolute;
 }
 
-header>img {
+header > img {
     height: 90%;
 }
 
@@ -46,18 +46,18 @@ header>img {
     height: auto;
 }
 
-header>div {
+header > div {
     display: flex;
 }
 
-header>div>nav {
+header > div > nav {
     margin: 0 1vw;
     box-sizing: border-box;
     padding: 0.3vw;
     font-size: 1vw;
 }
 
-header>div>nav:hover {
+header > div > nav:hover {
     border-bottom: 1px solid #0e2c8e;
     cursor: pointer;
     color: #020613;
@@ -118,14 +118,14 @@ header>div>nav:hover {
     height: auto !important;
 }
 
-.sixthSlide>div {
+.sixthSlide > div {
     width: 40%;
     overflow: hidden;
     box-shadow: 0 0 30px rgb(48, 25, 148);
     margin: 5vw 0;
 }
 
-.sixthSlide>div img {
+.sixthSlide > div img {
     width: 100%;
 }
 
@@ -174,7 +174,7 @@ header>div>nav:hover {
     align-items: center;
 }
 
-.slideImageContainer>div {
+.slideImageContainer > div {
     width: 65%;
     overflow: hidden;
     display: flex;
@@ -182,11 +182,11 @@ header>div>nav:hover {
     box-shadow: 0 0 30px rgb(48, 25, 148);
 }
 
-.slideImageContainer>div>img {
+.slideImageContainer > div > img {
     width: 100%;
 }
 
-.slideImageContainer>div>img:hover {
+.slideImageContainer > div > img:hover {
     transform: scale(1.1);
     transition: 1s;
 }
@@ -200,14 +200,14 @@ header>div>nav:hover {
     color: rgb(63, 63, 63);
 }
 
-.articleContainer>article {
+.articleContainer > article {
     width: 95%;
     height: 80%;
     overflow-y: auto;
     font-size: 14px;
 }
 
-.articleContainer>div {
+.articleContainer > div {
     width: 95%;
     margin-top: 2vw;
     text-shadow: 0 0 3px blue;
@@ -225,7 +225,7 @@ header>div>nav:hover {
     font-size: 1.3vw;
 }
 
-.articleContainer>article p,
+.articleContainer > article p,
 h3,
 h4,
 h5,
@@ -233,12 +233,23 @@ h6 {
     color: black;
 }
 
-.quizzletContainer {
+.podcastContainer {
     height: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     color: green;
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.quizzletContainer {
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     background-image: url("./images/reflectionBanner.jpg");
     background-repeat: no-repeat;
@@ -280,25 +291,25 @@ h6 {
         color: red;
     }
 
-    header>img {
+    header > img {
         width: 90%;
         height: auto;
     }
 
-    header>div {
+    header > div {
         width: 90%;
         flex-direction: column;
         height: 60%;
     }
 
-    header>div>nav {
+    header > div > nav {
         margin: 0 1vw;
         box-sizing: border-box;
         padding: 1.5vw;
         font-size: 2.5vw;
     }
 
-    header>div>nav:hover {
+    header > div > nav:hover {
         border-bottom: 1px solid #0e2c8e;
         cursor: pointer;
     }
@@ -307,7 +318,7 @@ h6 {
         visibility: visible;
     }
 
-    .mobileMenu>img {
+    .mobileMenu > img {
         height: 90%;
     }
 
@@ -328,11 +339,11 @@ h6 {
         width: 70%;
     }
 
-    .slideImageContainer>div {
+    .slideImageContainer > div {
         width: 80%;
     }
 
-    .slideImageContainer>div>img {
+    .slideImageContainer > div > img {
         width: 100%;
     }
 
@@ -340,12 +351,12 @@ h6 {
         width: 90%;
     }
 
-    .articleContainer>article {
+    .articleContainer > article {
         width: 100%;
         font-size: 2.5vw;
     }
 
-    .articleContainer>div {
+    .articleContainer > div {
         width: 100%;
         margin-top: 2vw;
         text-shadow: 0 0 3px blue;
@@ -358,7 +369,7 @@ h6 {
         padding: 5vw 0;
     }
 
-    #navMain{
+    #navMain {
         width: 60%;
     }
 
@@ -370,7 +381,7 @@ h6 {
         width: 50%;
     }
 
-    .quizzletContainer{
+    .quizzletContainer {
         padding: 2vw;
     }
 }
